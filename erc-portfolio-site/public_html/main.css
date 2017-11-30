@@ -4,40 +4,75 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : Nov 29, 2017, 2:37:12 PM
-    Author     : e.cooney
+    Created on : Nov 30, 2017, 2:20:42 PM
+    Author     : ecoon
 */
+
 /*
-*
-* Common
-*
+ Common
 */
-.right {
-    float: right;
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.container-column {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-row {
+    display: flex;
 }
 
 
-/*
-*
-*
-*
-*/
 
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
 /*
-*
-*
-*
+ Header
 */
+.header {
+    width: 100%;
+    min-height: 140px;
+    
+}
 
-/*
-*
-*
-*
-*/
 
-/*
-*
-*
-*
-*/
+.logo-image {
+     height: 124px;
+     vertical-align: bottom;
+}
 
+.details {
+   display: block;
+   margin-left: auto;   
+   
+  
+}
+
+.header-name, .header-title {
+ 
+    margin: 5px 0px;
+    text-align: right;
+   /* margin: 5px 0px 5px 0px; */
+}
+
+@media screen and (max-width: 365px) {
+    .container-row {
+        flex-wrap: wrap;
+      
+    }
+    
+    .details {
+        order: 1;
+    }
+     
+    .logo-image {
+        order: 2;
+    }
+}
