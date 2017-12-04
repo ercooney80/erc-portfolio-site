@@ -14,9 +14,14 @@ and open the template in the editor.
 body, html {
   margin: 0;
   padding: 0;
+  min-width: 300px;
   width: 100%;
   height: 100%;
   
+}
+
+.wrapper {
+    padding: 0px 20px 20px 20px;
 }
 
 .container-column {
@@ -28,20 +33,19 @@ body, html {
     display: flex;
 }
 
-
-
 header, nav, footer, section, article, div {
   box-sizing: border-box;
 }
+
 /*
  Header
 */
 .header {
     width: 100%;
     min-height: 140px;
-    
+    padding-bottom: 20px;
+    border-bottom: solid gray;
 }
-
 
 .logo-image {
      height: 124px;
@@ -51,8 +55,6 @@ header, nav, footer, section, article, div {
 .details {
    display: block;
    margin-left: auto;   
-   
-  
 }
 
 .header-name, .header-title {
@@ -62,17 +64,99 @@ header, nav, footer, section, article, div {
    /* margin: 5px 0px 5px 0px; */
 }
 
-@media screen and (max-width: 365px) {
+
+
+/*
+ Content Section
+*/
+.section-header {
+    margin: 5px 0px;
+    text-align: right;
+}
+
+.work-image {
+    width:220px;
+    height: 138.5px;
+}
+
+/*
+ Aside 
+*/
+.colors {
+    width: 100%;
+}
+
+.color {
+    width: 40px;
+    height: 40px;
+         margin-left: auto;
+        margin-right: auto;   
+}
+
+#color1 {
+    background-color: #02b3e4;
+}
+
+#color2 {
+    background-color: #2d3c49;
+}
+
+#color3 {
+    background-color: #7d97ad;
+}
+
+
+/*
+ Small Screen Breakpoint
+*/
+@media screen and (max-width: 400px) {
+    figure, figcaption, aside {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
     .container-row {
         flex-wrap: wrap;
-      
+
     }
     
     .details {
         order: 1;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    .header-name, .header-title {
+        text-align: center;
+    }
+    
+    .logo {
+        order: 2;
+        margin-left: auto;
+        margin-right: auto;
     }
      
     .logo-image {
-        order: 2;
+        
     }
+    
+    .section-header {
+        order: 0;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .work-image-wrapper {
+        margin-left: auto;
+        margin-right: auto;        
+    }
+    
+    .box {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 }

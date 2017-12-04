@@ -14,19 +14,76 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="main.css">     
     </head>
     <body>
-        <div class="container-column">
+        <div class="container-column wrapper">
             <header class="header">
 
                 <div class="container-row">
-                    <img class="logo-image" src="img/logo.png" alt="My Logo">
+                    <div class="logo">
+                        <img class="logo-image" src="img/logo.png" alt="My Logo">
+                    </div>
                     <div class="details">
                         <h1 class="header-name">Edward Cooney</h1>
-                        <h4 class="header-title">Front-End Wizard</h4>
+                        <h3 class="header-title">Front-End Wizard</h3>
                     </div>
                 </div>
             </header>
-            
-            
+
+            <main class="container-row">
+                <section class="container-column">
+                    <h2 class="section-header container-row">Featured Work</h2>
+                    <figure class="container-row">
+                        <div class="work-image-wrapper">
+                            <img src="img/balls.jpg" class="work-image" alt="Ballsy">
+                        </div>
+                        <figcaption>
+                            <p>Ballsy</p>
+                            <p>https://github/udacity/Ballsy/</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="container-row">
+                        <div class="work-image-wrapper">
+                            <img src="img/forest.jpg" class="work-image" alt="Green Night">	
+                        </div>
+                        <figcaption>
+                            <p>Green Night</p>
+                            <p>https://github/udacity/Green-Night/</p>
+                        </figcaption>
+                    </figure>
+                    <figure class="container-row">
+                        <div class="work-image-wrapper">
+                            <img src="img/light.jpg" class="work-image" alt="Tripify">	
+                        </div>
+                        <figcaption>
+                            <p>Tripify</p>
+                            <p>https://github/udacity/Tripify/</p>
+                        </figcaption>
+                    </figure>
+                </section>
+                <aside class="colors container-row">
+                    <div class="box">
+                    <div class="color" id="color1"></div>
+                    <div>
+                        <label>#02b3e4</label>
+                    </div>
+                    </div>
+                    <div class="box">
+                    <div class="color"  id="color2"></div>
+                    <div>
+                        <label>#2d3c49</label>
+                    </div>
+                    </div>
+                    <div class="box">
+                    <div class="color" id="color3"></div>
+                    <div>
+                        <label>#7d97ad</label>
+                    </div>
+                    </div>
+                </aside>
+            </main>
+
+
+
+
         </div>
     </body>
 </html>
